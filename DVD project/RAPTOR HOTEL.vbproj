@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E96BA4F-2388-46B5-AC39-C9F1972851CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DVD_project.My.MyApplication</StartupObject>
+    <RootNamespace>DVD_project</RootNamespace>
+    <AssemblyName>DVD project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DVD project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DVD project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDate.Designer.vb">
+      <DependentUpon>FrmDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditInfo.Designer.vb">
+      <DependentUpon>FrmEditInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInformation.Designer.vb">
+      <DependentUpon>FrmInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.vb">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoom1.Designer.vb">
+      <DependentUpon>FrmRoom1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoom1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaff.Designer.vb">
+      <DependentUpon>FrmStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewRooms.Designer.vb">
+      <DependentUpon>FrmViewRooms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewRooms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddRooms.Designer.vb">
+      <DependentUpon>FrmAddRooms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddRooms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBooking.Designer.vb">
+      <DependentUpon>FrmBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCust.Designer.vb">
+      <DependentUpon>frmCust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustMain.Designer.vb">
+      <DependentUpon>FrmCustMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogIn.Designer.vb">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportsMenu.Designer.vb">
+      <DependentUpon>frmReportsMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportsMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoom.Designer.vb">
+      <DependentUpon>frmRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.vb">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStaffLogIn.Designer.vb">
+      <DependentUpon>frmStaffLogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStaffLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAddRooms.resx">
+      <DependentUpon>FrmAddRooms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBooking.resx">
+      <DependentUpon>FrmBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCust.resx">
+      <DependentUpon>frmCust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustMain.resx">
+      <DependentUpon>FrmCustMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDate.resx">
+      <DependentUpon>FrmDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditInfo.resx">
+      <DependentUpon>FrmEditInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInformation.resx">
+      <DependentUpon>FrmInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogIn.resx">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoom.resx">
+      <DependentUpon>frmRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoom1.resx">
+      <DependentUpon>FrmRoom1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaff.resx">
+      <DependentUpon>FrmStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStaffLogIn.resx">
+      <DependentUpon>frmStaffLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewRooms.resx">
+      <DependentUpon>FrmViewRooms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
